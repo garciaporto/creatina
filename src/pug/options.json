@@ -1,0 +1,9 @@
+{
+    "lang": "en",
+    "title": "Creatina Design",
+    "description": "Descripción del site",
+    "mobileColor": "#000000",
+    "favicon": "./img/favicon.ico",
+    "logoPNG": "./img/logo.png",
+    "logoSVG": "./img/logo.svg"
+}

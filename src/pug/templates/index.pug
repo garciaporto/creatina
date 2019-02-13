@@ -1,0 +1,69 @@
+extends ../partials/layout.pug
+block content
+  #about.container-fluid.my-5
+    .container
+      .row
+        .col-md.m-0.p-0
+          .flex-container
+            .flex-cell
+              .flex-item
+                .about
+        .col-md.m-0.p-0
+          .flex-container
+            .flex-cell
+              .flex-item.p-4
+                h1.text-uppercase.black BIG COMPANIE’S DESIGN STUDIO
+                p With more than 10 years of trayectory, we keep advancing and growing as a profesional team, we keepsorting out challengers, reaching goals, specializing and innovating, combining originality and effectivity. We bring together practical and creative solutions to your company’s necesities, the design creates an impact and sales rise.
+  include ../partials/_portfolio
+  #clients.container-fluid.my-5
+    .container
+      .row
+        .col-3.col-sm-4.divider.my-auto
+        .col-6.col-sm-4.text-center
+          h1.h2.text-uppercase.black.my-4 our clients
+        .col-3.col-sm-4.divider.my-auto
+      .owl-carousel.owl-theme
+        div.p-2
+          img(src='https://www.solodev.com/assets/carousel/image1.png')
+        div.p-2
+          img(src='https://www.solodev.com/assets/carousel/image2.png')
+        div.p-2
+          img(src='https://www.solodev.com/assets/carousel/image3.png')
+        div.p-2
+          img(src='https://www.solodev.com/assets/carousel/image4.png')
+        div.p-2
+          img(src='https://www.solodev.com/assets/carousel/image5.png')
+        div.p-2
+          img(src='https://www.solodev.com/assets/carousel/image6.png')
+
+  #contact.container-fluid.p-5
+    .container
+      .row
+        .col-8.offset-2
+          .row
+            .col-3.divider.my-auto.hide-xs
+            .col-12.col-md-6.text-center
+              h1.h2.text-uppercase.black.my-4 contact us
+            .col-3.divider.my-auto.hide-xs
+      .row
+        .col-md-8.offset-md-2.mt-3
+          .form.theme-font(method='post' action='formMail.php')
+            .form-row
+              .col-sm
+                input.form-control.rounded-0(type='text' name='firstName' placeholder='Name')
+              .col-sm
+                input.form-control.rounded-0(type='text' name='lasttName' placeholder='Lastname')
+            .row
+              .col
+                input.form-control.rounded-0.my-2(type='email' name='email' placeholder='e-mail')
+                input.form-control.rounded-0.my-2(type='text' name='subject' placeholder='Subject')
+                textarea.form-control.rounded-0.my-2(name='message', cols="30", rows="10" placeholder='Message')
+            .row
+              .col-sm-6.offset-sm-3    
+                button.btn-submit.mb-2.text-uppercase(type="submit") send
+
+  .container-fluid.p-0.hide-xs
+    iframe(src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3032.4278560462067!2d-3.892426148388562!3d40.53213557925037!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd4182dec46aecdb%3A0x89dc07b03c32fae9!2sCalle+Pollensa%2C+4%2C+28290+Las+Rozas%2C+Madrid!5e0!3m2!1ses!2ses!4v1549972715881" width="100%" height="450" frameborder="0" style="border:0" allowfullscreen)
+          
+          
+          
