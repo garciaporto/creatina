@@ -120,7 +120,8 @@ a {
   justify-content: center;
   align-items: stretch;
   padding: 0;
-  box-sizing: border-box; }
+  box-sizing: border-box;
+  overflow: hidden; }
   .flex-cell:before {
     content: '';
     display: table;
@@ -137,11 +138,19 @@ a {
 .flex-icon {
   align-items: flex-end; }
 
+.flex-img {
+  flex: 1;
+  height: 100%; }
+
+@media screen and (max-width: 575px) {
+  .xs-form-margin {
+    margin-top: 0.5em; } }
+
 .theme-font {
   font-family: "Titillium Web", sans-serif; }
 
 textarea {
-  resize: none; }
+  resize: none !important; }
 
 .btn-submit {
   font-family: "Titillium Web", sans-serif;
@@ -252,9 +261,6 @@ textarea {
 
 .footer-logo {
   max-width: 130px; }
-
-.overflow {
-  overflow: hidden; }
 
 a.portfolio {
   color: white;

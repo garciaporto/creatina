@@ -148,6 +148,7 @@ a
   align-items: stretch
   padding: 0
   box-sizing: border-box
+  overflow: hidden
   &:before
     content: ''
     display: table
@@ -161,15 +162,20 @@ a
   flex-direction: column
 .flex-icon
   align-items: flex-end
+.flex-img
+  flex: 1
+  height: 100%
 
 // ===============================================
 // ELEMENTOS
 // ===============================================
-
+.xs-form-margin
+  @media screen and (max-width: 575px)
+    margin-top: 0.5em
 .theme-font
   font-family: $display-font
 textarea
-  resize: none
+  resize: none !important
 .btn-submit
   font-family: $display-font
   padding: 0.3em 2em
@@ -265,8 +271,7 @@ textarea
 // ===============================================
 // GALERIA
 // ===============================================
-.overflow
-  overflow: hidden
+
 a.portfolio
   color: white
   text-decoration: none

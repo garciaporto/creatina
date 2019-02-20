@@ -209,7 +209,28 @@
 		fluidSpeed: false,
 		dragEndSpeed: false,
 
-		responsive: {},
+		responsive: {
+			0:{
+				items: 2,
+				nav: false
+			},
+			470:{
+				items: 3,
+				nav: false
+			},
+			768:{
+				items: 4,
+				nav: false
+			},
+			992:{
+				items: 5,
+				nav: false
+			},
+			1200:{
+				items: 6,
+				nav: false
+			}
+		},
 		responsiveRefreshRate: 200,
 		responsiveBaseElement: window,
 
