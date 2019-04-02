@@ -260,7 +260,13 @@ textarea {
   text-decoration: none; }
 
 .footer-logo {
-  max-width: 130px; }
+  max-height: 40px; }
+
+.orange-stripe {
+  content: "";
+  height: 20px;
+  width: 100%;
+  background-color: #FF8825; }
 
 a.portfolio {
   color: white;
