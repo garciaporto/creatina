@@ -1,0 +1,7 @@
+
+Options +FollowSymLinks
+
+RewriteEngine on
+
+RewriteCond %{SERVER_PORT} 80
+RewriteRule ^(.*)$ https://www.creatina-design.com [R,L]

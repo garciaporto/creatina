@@ -1,6 +1,41 @@
-#cookieConsent
-  #closeCookieConsent x
-  |El sitio web www.miweb.es utiliza cookies propias y de terceros para recopilar información que ayuda a optimizar su visita a sus páginas web. No se utilizarán las cookies para recoger información de carácter personal. Usted puede permitir su uso o rechazarlo, también puede cambiar su configuración siempre que lo desee. Encontrará más información en nuestra Política de Cookies.
-  a(href='#', target='_blank') More info
-  | .
-  a.cookieConsentOK That's Fine
+.alert.text-center.cookiealert.montse(role='alert')
+  | Creatina Design uses own and third parties cookies to gather information which helps to optimize you visit.
+  a.mx-2(href='#', data-toggle='modal', data-target='#cookiesLegal') Know more
+  button.btn.btn-primary.btn-sm.acceptcookies(type='button', aria-label='Close') OK
+#cookiesLegal.modal.fade(tabindex='-1', role='dialog', aria-labelledby='Política Cookies', aria-hidden='true', style='display: none;')
+  .modal-dialog.modal-dialog-centered
+    .modal-content
+      .modal-header.montse
+        h3#cookiesLegal.modal-title 
+          strong Creatina Design's Cookies Policy
+        button.close(type='close', data-dismiss='modal', aria-label='Cerrar')
+          span(aria-hidden='true') ×
+      .modal-body.montse
+        h3
+          strong What Are Cookies
+        p As is common practice with almost all professional websites this site uses cookies, which are tiny files that are downloaded to your computer, to improve your experience. This page describes what information they gather, how we use it and why we sometimes need to store these cookies. We will also share how you can prevent these cookies from being stored however this may downgrade or 'break' certain elements of the sites functionality.
+        p For more general information on cookies see the Wikipedia article on
+          a.mx-1(target="_blank" href="https://en.wikipedia.org/wiki/HTTP_cookie") HTTP Cookies.
+        h3
+          strong How We Use Cookies
+        p We use cookies for a variety of reasons detailed below. Unfortunately in most cases there are no industry standard options for disabling cookies without completely disabling the functionality and features they add to this site. It is recommended that you leave on all cookies if you are not sure whether you need them or not in case they are used to provide a service that you use.
+        h3
+          strong Disabling Cookies
+        p You can prevent the setting of cookies by adjusting the settings on your browser (see your browser Help for how to do this). Be aware that disabling cookies will affect the functionality of this and many other websites that you visit. Disabling cookies will usually result in also disabling certain functionality and features of the this site. Therefore it is recommended that you do not disable cookies.
+        h3
+          strong The Cookies We Set
+        h4
+          small Forms related cookies
+        p When you submit data to through a form such as those found on contact pages or comment forms cookies may be set to remember your user details for future correspondence.
+        h3
+          strong Third Party Cookies
+        p In some special cases we also use cookies provided by trusted third parties. The following section details which third party cookies you might encounter through this site.
+        p This site uses Google Analytics which is one of the most widespread and trusted analytics solution on the web for helping us to understand how you use the site and ways that we can improve your experience. These cookies may track things such as how long you spend on the site and the pages that you visit so we can continue to produce engaging content.
+        p For more information on Google Analytics cookies, see the official Google Analytics page.
+        h3
+          strong More Information
+        p Hopefully that has clarified things for you and as was previously mentioned if there is something that you aren't sure whether you need or not it's usually safer to leave cookies enabled in case it does interact with one of the features you use on our site.
+        p However if you are still looking for more information then you can contact us through
+          a.mx-1(href="mailto: creatina@creatina-design.com") creatina@creatina-design.com
+      .modal-footer.montse
+        button.btn.btn-secondary(type='button', data-dismiss='modal') Close

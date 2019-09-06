@@ -142,6 +142,18 @@ a {
   flex: 1;
   height: 100%; }
 
+.flex-fullsize {
+  flex: 0 0 100;
+  display: flex;
+  justify-content: center;
+  align-items: stretch;
+  padding: 0;
+  box-sizing: border-box;
+  width: 100%; }
+
+.full-height {
+  height: calc(100vh - 364px); }
+
 @media screen and (max-width: 575px) {
   .xs-form-margin {
     margin-top: 0.5em; } }
@@ -197,6 +209,43 @@ textarea {
 @media screen and (min-width: 768px) {
   .bl-white {
     border-left: 1px solid #929395; } }
+
+.hidden {
+  display: none; }
+
+.legal {
+  font-size: 0.8em;
+  color: #6d6d6d; }
+
+a.legal:hover {
+  color: #fff;
+  text-decoration: none !important; }
+
+.spam-cell {
+  width: 40px;
+  background-color: #fff;
+  color: #B2B2B2;
+  padding: .375rem .25rem;
+  font-size: 1rem;
+  line-height: 1.5;
+  background-clip: padding-box;
+  border: 1px solid #B2B2B2;
+  text-align: center; }
+
+.p {
+  font-family: "Titillium Web", sans-serif;
+  font-weight: 300;
+  color: #2d2d2d;
+  line-height: 1.8em; }
+
+.error {
+  font-family: "Titillium Web", sans-serif;
+  font-weight: 700;
+  color: #red;
+  line-height: 1.8em; }
+
+.space-margin-l {
+  margin-left: .05em; }
 
 .about {
   background: url("../img/indexbg4_3200x1800.jpg");

@@ -47,17 +47,21 @@ block content
             .col-2.col-sm-3.divider.my-auto
       .row
         .col-lg-8.offset-lg-2.col-md-12.mt-3.px-0
-          .form.theme-font(method='post' action='formMail.php')
+          form.theme-font(method='post' action='send.php')
             .form-row
               .col-sm
-                input.form-control.rounded-0(type='text' name='firstName' placeholder='Name')
+                input.form-control.rounded-0(type='text' name='Full_Name' id='Full_Name' required placeholder='Full Name *')
               .col-sm.xs-form-margin
-                input.form-control.rounded-0(type='text' name='lasttName' placeholder='Lastname')
+                input.form-control.rounded-0(type='text' name='Telephone_Number' id='Telephone_Number' placeholder='Phone Number')
             .row
               .col
-                input.form-control.rounded-0.my-2(type='email' name='email' placeholder='e-mail')
-                input.form-control.rounded-0.my-2(type='text' name='subject' placeholder='Subject')
-                textarea.form-control.rounded-0.my-2(name='message', cols="30", rows="10" placeholder='Message')
+                input.form-control.rounded-0.my-2(type='email' name='Email_Address' id='Email_Address' required placeholder='E-mail *')
+                textarea.form-control.rounded-0.my-2(name='Your_Message' id='Your_Message' cols="30" rows="10" required placeholder='Message *')
+            .row
+              .col
+                input(type='checkbox' name='PrivacyPolicy' id='PrivacyPolicy' required value='Privacy Policy Accepted')
+                span.ml-2.legal I have read and accept the 
+                a.legal.space-margin-l(href="#", data-toggle='modal', data-target='#privacyNotice') Privacy Policy
             .row
               .col-sm-6.offset-sm-3    
                 button.btn-submit.mb-2.text-uppercase(type="submit") send
